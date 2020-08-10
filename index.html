@@ -13,14 +13,10 @@
 
     <header class="bg-white shadow-md">
         <div class="bg-gray-700">
-            <div class="container flex">
-                <ul class="flex ml-auto">
-                    <li class="block px-2 py-2 text-gray-400 text-sm font-semibold">
-                        Hello,
-
-                        <span class="font-main">John Doe</span>
-                    </li>
-                    <li><a class="block px-2 py-2 text-gray-400 text-sm hover:text-blue-300 font-semibold" href="#">Logout!</a></li>
+            <div class="container flex justify-between">
+                <ul class="flex items-center ml-auto">
+                    <li><a class="block px-2 py-2 text-gray-400 text-sm hover:text-blue-300 font-main font-semibold capitalize" href="#">sign in</a></li>
+                    <li><a class="block px-2 py-2 text-gray-400 text-sm hover:text-blue-300 font-main font-semibold capitalize" href="#">sign up</a></li>
                 </ul>
             </div>
         </div>
@@ -33,49 +29,194 @@
             </a>
 
             <ul class="flex">
-                <li><a class="block px-2 ml-2 hover:text-blue-500 font-main py-8 text-gray-600 font-semibold" href="#">Dashboard</a></li>
-                <li><a class="block px-2 ml-2 hover:text-blue-500 font-main py-8 text-gray-600 font-semibold" href="#">Users</a></li>
-                <li><a class="block px-2 ml-2 hover:text-blue-500 font-main py-8 text-gray-600 font-semibold" href="#">Posts</a></li>
-                <li><a class="block px-2 ml-2 hover:text-blue-500 font-main py-8 text-gray-600 font-semibold" href="#">Comments</a></li>
-                <li><a class="block px-2 ml-2 hover:text-blue-500 font-main py-8 text-gray-600 font-semibold" href="#">Tags</a></li>
-                <li><a class="block px-2 ml-2 hover:text-blue-500 font-main py-8 text-gray-600 font-semibold" href="#">Settings</a></li>
+                <li><a class="block px-2 ml-2 hover:text-blue-500 font-main py-8 text-gray-600 font-semibold capitalize" href="#">homepage</a></li>
+                <li><a class="block px-2 ml-2 hover:text-blue-500 font-main py-8 text-gray-600 font-semibold capitalize" href="#">news</a></li>
+                <li><a class="block px-2 ml-2 hover:text-blue-500 font-main py-8 text-gray-600 font-semibold capitalize" href="#">categories</a></li>
+                <li><a class="block px-2 ml-2 hover:text-blue-500 font-main py-8 text-gray-600 font-semibold capitalize" href="#">free gifts</a></li>
+                <li><a class="block px-2 ml-2 hover:text-blue-500 font-main py-8 text-gray-600 font-semibold capitalize" href="#">contact us</a></li>
             </ul>
         </div>
     </header>
 
-    <section class="container grid grid-cols-6 mt-5 gap-5">
-        <main class="bg-white shadow-lg border border-gray-300 p-10 col-start-1 col-end-5">
-            <h3 class="text-3xl font-main font-semibold text-gray-700 px-5 mb-5" id="title">
+    <section class="container grid grid-cols-6 mt-8 gap-5">
+        <main class="bg-white shadow-lg border border-gray-300 col-start-1 col-end-5">
+            <h3 class="text-3xl font-main font-semibold text-gray-700 px-5 py-5">
                 Latest Articles
             </h3>
 
-            <section id="post" class="grid grid-cols-5 gap-5 hover:bg-gray-100 transition duration-300 ease-in-out p-5">
-                <div class="col-start-1 col-end-3">
-                    <img src="../images/5.jpg" alt="">
+            <section class="grid grid-cols-5 gap-8 hover:bg-blue-100 transition duration-300 ease-in-out p-5">
+                <div class="col-start-1 col-end-3 overflow-hidden">
+                    <img src="images/1.jpg" class="transform hover:scale-125 transition duration-500 ease-in-out rounded" alt="">
                 </div>
 
-                <div class="col-start-3 col-end-6 flex flex-col justify-around">
-                    <a href="#" class="hover:text-blue-600 transition duration-300 ease-in-out uppercase font-main text-xs tracking-wider text-gray-700">Medical News</a>
-                    <a href="#" class="hover:text-blue-600 transition duration-300 ease-in-out text-2xl font-extrabold text-gray-800">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
-                    <p class="text-md text-gray-600">
+                <div class="col-start-3 col-end-6">
+                    <div>
+                        <div class="flex justify-between items-center">
+                            <a class="transition duration-300 ease-in-out hover:text-blue-500 capitalize text-sm text-gray-500 tracking-tight font-semibold font-main" href="#">
+                                traveling
+                            </a>
+
+                            <div class="flex items-center">
+                                <a href="#" class="transition duration-300 ease-in-out hover:text-blue-500 text-sm text-gray-500 tracking-tight font-semibold font-main">Adel Hrt</a>
+                                <span class="h-1 w-1 bg-gray-400 mx-2 inline-block rounded"></span>
+                                <span class="text-sm text-gray-500 tracking-tight font-semibold font-main">21/25/2020</span>
+                            </div>
+                        </div>
+    
+                        <a href="#" class="hover:text-blue-600 block transition duration-300 ease-in-out text-2xl font-main font-extrabold text-gray-700 mb-3 mt-3">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </a>
+                    </div>
+                    
+                    <p class="text-md text-gray-500 font-main">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet magnam quos, repellendus repellat commodi culpa voluptas consectetur molestias. Beatae, quisquam!
                     </p>
                 </div>
             </section>
 
-            <section id="post" class="grid grid-cols-5 gap-5 hover:bg-gray-100 transition duration-300 ease-in-out p-5">
-                <div class="col-start-1 col-end-3">
-                    <img src="../images/6.jpg" alt="">
+            <section class="grid grid-cols-5 gap-8 hover:bg-blue-100 transition duration-300 ease-in-out p-5">
+                <div class="col-start-1 col-end-3 overflow-hidden">
+                    <img src="images/2.jpg" class="transform hover:scale-125 transition duration-500 ease-in-out rounded" alt="">
                 </div>
 
-                <div class="col-start-3 col-end-6 flex flex-col justify-around">
-                    <a href="#" class="hover:text-blue-600 transition duration-300 ease-in-out uppercase font-main text-xs tracking-wider text-gray-700">
-                        Happy news   
-                    </a>
-                    <a href="#" class="hover:text-blue-600 transition duration-300 ease-in-out text-2xl font-extrabold text-gray-800">
-                        Things are making a progress!
-                    </a>
-                    <p class="text-md text-gray-600">
+                <div class="col-start-3 col-end-6">
+                    <div>
+                        <div class="flex justify-between items-center">
+                            <a class="transition duration-300 ease-in-out hover:text-blue-500 capitalize text-sm text-gray-500 tracking-tight font-semibold font-main" href="#">
+                                desert
+                            </a>
+
+                            <div class="flex items-center">
+                                <a href="#" class="transition duration-300 ease-in-out hover:text-blue-500 text-sm text-gray-500 tracking-tight font-semibold font-main">Adel Hrt</a>
+                                <span class="h-1 w-1 bg-gray-400 mx-2 inline-block rounded"></span>
+                                <span class="text-sm text-gray-500 tracking-tight font-semibold font-main">21/25/2020</span>
+                            </div>
+                        </div>
+    
+                        <a href="#" class="hover:text-blue-600 block transition duration-300 ease-in-out text-2xl font-main font-extrabold text-gray-700 mb-3 mt-3">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </a>
+                    </div>
+                    
+                    <p class="text-md text-gray-500 font-main">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet magnam quos, repellendus repellat commodi culpa voluptas consectetur molestias. Beatae, quisquam!
+                    </p>
+                </div>
+            </section>
+
+            <section class="grid grid-cols-5 gap-8 hover:bg-blue-100 transition duration-300 ease-in-out p-5">
+                <div class="col-start-1 col-end-3 overflow-hidden">
+                    <img src="images/3.jpg" class="transform hover:scale-125 transition duration-500 ease-in-out rounded" alt="">
+                </div>
+
+                <div class="col-start-3 col-end-6">
+                    <div>
+                        <div class="flex justify-between items-center">
+                            <a class="transition duration-300 ease-in-out hover:text-blue-500 capitalize text-sm text-gray-500 tracking-tight font-semibold font-main" href="#">
+                                awesomeness
+                            </a>
+
+                            <div class="flex items-center">
+                                <a href="#" class="transition duration-300 ease-in-out hover:text-blue-500 text-sm text-gray-500 tracking-tight font-semibold font-main">Adel Hrt</a>
+                                <span class="h-1 w-1 bg-gray-400 mx-2 inline-block rounded"></span>
+                                <span class="text-sm text-gray-500 tracking-tight font-semibold font-main">21/25/2020</span>
+                            </div>
+                        </div>
+    
+                        <a href="#" class="hover:text-blue-600 block transition duration-300 ease-in-out text-2xl font-main font-extrabold text-gray-700 mb-3 mt-3">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </a>
+                    </div>
+                    
+                    <p class="text-md text-gray-500 font-main">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet magnam quos, repellendus repellat commodi culpa voluptas consectetur molestias. Beatae, quisquam!
+                    </p>
+                </div>
+            </section>
+            <section class="grid grid-cols-5 gap-8 hover:bg-blue-100 transition duration-300 ease-in-out p-5">
+                <div class="col-start-1 col-end-3 overflow-hidden">
+                    <img src="images/4.jpg" class="transform hover:scale-125 transition duration-500 ease-in-out rounded" alt="">
+                </div>
+
+                <div class="col-start-3 col-end-6">
+                    <div>
+                        <div class="flex justify-between items-center">
+                            <a class="transition duration-300 ease-in-out hover:text-blue-500 capitalize text-sm text-gray-500 tracking-tight font-semibold font-main" href="#">
+                                traveling
+                            </a>
+
+                            <div class="flex items-center">
+                                <a href="#" class="transition duration-300 ease-in-out hover:text-blue-500 text-sm text-gray-500 tracking-tight font-semibold font-main">Adel Hrt</a>
+                                <span class="h-1 w-1 bg-gray-400 mx-2 inline-block rounded"></span>
+                                <span class="text-sm text-gray-500 tracking-tight font-semibold font-main">21/25/2020</span>
+                            </div>
+                        </div>
+    
+                        <a href="#" class="hover:text-blue-600 block transition duration-300 ease-in-out text-2xl font-main font-extrabold text-gray-700 mb-3 mt-3">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </a>
+                    </div>
+                    
+                    <p class="text-md text-gray-500 font-main">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet magnam quos, repellendus repellat commodi culpa voluptas consectetur molestias. Beatae, quisquam!
+                    </p>
+                </div>
+            </section>
+            <section class="grid grid-cols-5 gap-8 hover:bg-blue-100 transition duration-300 ease-in-out p-5">
+                <div class="col-start-1 col-end-3 overflow-hidden">
+                    <img src="images/5.jpg" class="transform hover:scale-125 transition duration-500 ease-in-out rounded" alt="">
+                </div>
+
+                <div class="col-start-3 col-end-6">
+                    <div>
+                        <div class="flex justify-between items-center">
+                            <a class="transition duration-300 ease-in-out hover:text-blue-500 capitalize text-sm text-gray-500 tracking-tight font-semibold font-main" href="#">
+                                business
+                            </a>
+
+                            <div class="flex items-center">
+                                <a href="#" class="transition duration-300 ease-in-out hover:text-blue-500 text-sm text-gray-500 tracking-tight font-semibold font-main">Adel Hrt</a>
+                                <span class="h-1 w-1 bg-gray-400 mx-2 inline-block rounded"></span>
+                                <span class="text-sm text-gray-500 tracking-tight font-semibold font-main">21/25/2020</span>
+                            </div>
+                        </div>
+    
+                        <a href="#" class="hover:text-blue-600 block transition duration-300 ease-in-out text-2xl font-main font-extrabold text-gray-700 mb-3 mt-3">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </a>
+                    </div>
+                    
+                    <p class="text-md text-gray-500 font-main">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet magnam quos, repellendus repellat commodi culpa voluptas consectetur molestias. Beatae, quisquam!
+                    </p>
+                </div>
+            </section>
+
+            <section class="grid grid-cols-5 gap-8 hover:bg-blue-100 transition duration-300 ease-in-out p-5">
+                <div class="col-start-1 col-end-3 overflow-hidden">
+                    <img src="images/6.jpg" class="transform hover:scale-125 transition duration-500 ease-in-out rounded" alt="">
+                </div>
+
+                <div class="col-start-3 col-end-6">
+                    <div>
+                        <div class="flex justify-between items-center">
+                            <a class="transition duration-300 ease-in-out hover:text-blue-500 capitalize text-sm text-gray-500 tracking-tight font-semibold font-main" href="#">
+                                traveling
+                            </a>
+
+                            <div class="flex items-center">
+                                <a href="#" class="transition duration-300 ease-in-out hover:text-blue-500 text-sm text-gray-500 tracking-tight font-semibold font-main">Adel Hrt</a>
+                                <span class="h-1 w-1 bg-gray-400 mx-2 inline-block rounded"></span>
+                                <span class="text-sm text-gray-500 tracking-tight font-semibold font-main">21/25/2020</span>
+                            </div>
+                        </div>
+    
+                        <a href="#" class="hover:text-blue-600 block transition duration-300 ease-in-out text-2xl font-main font-extrabold text-gray-700 mb-3 mt-3">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </a>
+                    </div>
+                    
+                    <p class="text-md text-gray-500 font-main">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet magnam quos, repellendus repellat commodi culpa voluptas consectetur molestias. Beatae, quisquam!
                     </p>
                 </div>
