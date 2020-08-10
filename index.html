@@ -1,17 +1,112 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Git from VSCode</title>
-</head>
-<body>
-    <p>
-        boom!
-    </p>
+    <link rel="icon" type="image/png" href="images/icon.png" />
+    <title>Admin CP | Dashboard</title>
+    <link rel="stylesheet" href="../css/tailwind.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
 
-    <h1>
-        Hello, for Git from vscode!
-    </h1>
+    <style>
+        .container {
+            max-width: 1200px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        .font-main {
+            font-family: 'Noto Sans', sans-serif;
+        }
+        #title::after {
+            content: '';
+            width: 20px;
+            height: 3px;
+            background-color: blue;
+            position: relative;
+        }
+    </style>
+</head>
+<body class="bg-gray-300">
+
+    <header class="bg-white shadow-md">
+        <div class="bg-gray-700">
+            <div class="container flex">
+                <ul class="flex ml-auto">
+                    <li class="block px-2 py-2 text-gray-400 text-sm font-semibold">
+                        Welcome back, 
+
+                        <span class="font-main">Adel Hrt</span>
+                    </li>
+                    <li><a class="block px-2 py-2 text-gray-400 text-sm hover:text-blue-300 font-semibold" href="#">Logout!</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container flex justify-between items-center">
+            <a href="#" class="flex items-center">
+                <img class="h-12 mr-2" src="images/icon.png" alt="">
+                <span class="text-blue-600 font-main font-semibold text-3xl">Admin</span>
+                <span class="text-gray-600 font-main font-semibold text-3xl">CP</span>
+            </a>
+
+            <ul class="flex">
+                <li><a class="block px-2 ml-2 hover:text-blue-500 font-main py-8 text-gray-600 font-semibold" href="#">Dashboard</a></li>
+                <li><a class="block px-2 ml-2 hover:text-blue-500 font-main py-8 text-gray-600 font-semibold" href="#">Users</a></li>
+                <li><a class="block px-2 ml-2 hover:text-blue-500 font-main py-8 text-gray-600 font-semibold" href="#">Posts</a></li>
+                <li><a class="block px-2 ml-2 hover:text-blue-500 font-main py-8 text-gray-600 font-semibold" href="#">Comments</a></li>
+                <li><a class="block px-2 ml-2 hover:text-blue-500 font-main py-8 text-gray-600 font-semibold" href="#">Tags</a></li>
+                <li><a class="block px-2 ml-2 hover:text-blue-500 font-main py-8 text-gray-600 font-semibold" href="#">Settings</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="container grid grid-cols-6 mt-5 gap-5">
+        <main class="bg-white shadow-lg border border-gray-300 p-10 col-start-1 col-end-5">
+            <h3 class="text-3xl font-main font-semibold text-gray-700 px-5 mb-5" id="title">
+                Latest Articles
+            </h3>
+
+            <section id="post" class="grid grid-cols-5 gap-5 hover:bg-gray-100 transition duration-300 ease-in-out p-5">
+                <div class="col-start-1 col-end-3">
+                    <img src="../images/5.jpg" alt="">
+                </div>
+
+                <div class="col-start-3 col-end-6 flex flex-col justify-around">
+                    <a href="#" class="hover:text-blue-600 transition duration-300 ease-in-out uppercase font-main text-xs tracking-wider text-gray-700">Medical News</a>
+                    <a href="#" class="hover:text-blue-600 transition duration-300 ease-in-out text-2xl font-extrabold text-gray-800">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
+                    <p class="text-md text-gray-600">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet magnam quos, repellendus repellat commodi culpa voluptas consectetur molestias. Beatae, quisquam!
+                    </p>
+                </div>
+            </section>
+
+            <section id="post" class="grid grid-cols-5 gap-5 hover:bg-gray-100 transition duration-300 ease-in-out p-5">
+                <div class="col-start-1 col-end-3">
+                    <img src="../images/6.jpg" alt="">
+                </div>
+
+                <div class="col-start-3 col-end-6 flex flex-col justify-around">
+                    <a href="#" class="hover:text-blue-600 transition duration-300 ease-in-out uppercase font-main text-xs tracking-wider text-gray-700">
+                        Happy news   
+                    </a>
+                    <a href="#" class="hover:text-blue-600 transition duration-300 ease-in-out text-2xl font-extrabold text-gray-800">
+                        Things are making a progress!
+                    </a>
+                    <p class="text-md text-gray-600">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet magnam quos, repellendus repellat commodi culpa voluptas consectetur molestias. Beatae, quisquam!
+                    </p>
+                </div>
+            </section>
+        </main>
+
+        <aside class="bg-white shadow-lg border border-gray-300 p-5 col-start-5 col-end-7"></aside>
+    </section>
+
+    <br><br>
+
+    <script src="../js/vue.js"></script>
+    <script src="../js/swiper-bundle.min.js"></script>
+    <script src="../js/smooth-scroll.min.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 </html>
